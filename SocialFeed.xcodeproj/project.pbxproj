@@ -6,14 +6,69 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		83D8CF132EC870E700304DA2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83D8CF122EC870E700304DA2 /* Alamofire */; };
+		83E042B02EC871C40078F04D /* SocialFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83E042A92EC871C40078F04D /* SocialFeed.xcdatamodeld */; };
+		83E042B42EC8726B0078F04D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 83E042B32EC8726B0078F04D /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		83B138412EC83D1E004425A2 /* SocialFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E042AB2EC871C40078F04D /* SocialFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocialFeed.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		83E042C42EC8D1750078F04D /* Exceptions for "SocialFeed" folder in "SocialFeed" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 83B138402EC83D1E004425A2 /* SocialFeed */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		83AB96C02EC86DC60000E138 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		83AB96C42EC86E280000E138 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83AB96CB2EC86EAE0000E138 /* Utilities */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		83B138432EC83D1E004425A2 /* SocialFeed */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				83E042C42EC8D1750078F04D /* Exceptions for "SocialFeed" folder in "SocialFeed" target */,
+			);
 			path = SocialFeed;
+			sourceTree = "<group>";
+		};
+		83B138572EC84974004425A2 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		83B1385E2EC8698D004425A2 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83B138652EC86A28004425A2 /* CoreData */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		83B138692EC86AEB004425A2 /* Network */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E042B42EC8726B0078F04D /* Alamofire in Frameworks */,
+				83D8CF132EC870E700304DA2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,8 +89,16 @@
 		83B138382EC83D1E004425A2 = {
 			isa = PBXGroup;
 			children = (
+				83AB96CB2EC86EAE0000E138 /* Utilities */,
+				83AB96C42EC86E280000E138 /* Views */,
+				83AB96C02EC86DC60000E138 /* ViewModels */,
+				83B138692EC86AEB004425A2 /* Network */,
+				83B138652EC86A28004425A2 /* CoreData */,
+				83B1385E2EC8698D004425A2 /* Models */,
+				83B138572EC84974004425A2 /* App */,
 				83B138432EC83D1E004425A2 /* SocialFeed */,
 				83B138422EC83D1E004425A2 /* Products */,
+				83E042A92EC871C40078F04D /* SocialFeed.xcdatamodeld */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,11 +126,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				83AB96C02EC86DC60000E138 /* ViewModels */,
+				83AB96C42EC86E280000E138 /* Views */,
+				83AB96CB2EC86EAE0000E138 /* Utilities */,
 				83B138432EC83D1E004425A2 /* SocialFeed */,
+				83B138572EC84974004425A2 /* App */,
+				83B1385E2EC8698D004425A2 /* Models */,
+				83B138652EC86A28004425A2 /* CoreData */,
+				83B138692EC86AEB004425A2 /* Network */,
 			);
 			name = SocialFeed;
-			packageProductDependencies = (
-			);
 			productName = SocialFeed;
 			productReference = 83B138412EC83D1E004425A2 /* SocialFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +164,9 @@
 			);
 			mainGroup = 83B138382EC83D1E004425A2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				83E042B22EC8726B0078F04D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 83B138422EC83D1E004425A2 /* Products */;
 			projectDirPath = "";
@@ -119,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E042B02EC871C40078F04D /* SocialFeed.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SocialFeed/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SocialFeed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -282,7 +356,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SocialFeed/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SocialFeed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -322,6 +396,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83D8CF112EC870E700304DA2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		83E042B22EC8726B0078F04D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83D8CF122EC870E700304DA2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83D8CF112EC870E700304DA2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		83E042B32EC8726B0078F04D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83E042B22EC8726B0078F04D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		83E042A92EC871C40078F04D /* SocialFeed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				83E042AB2EC871C40078F04D /* SocialFeed.xcdatamodel */,
+			);
+			currentVersion = 83E042AB2EC871C40078F04D /* SocialFeed.xcdatamodel */;
+			path = SocialFeed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83B138392EC83D1E004425A2 /* Project object */;
 }
